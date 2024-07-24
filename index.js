@@ -24,7 +24,7 @@ function createSVG(response) {
     if (error) {
       console.log(error);
     } else {
-      console.log(colors.bgGreen("icon maker success"));
+      console.log(colors.bgGreen("Generated logo.svg"));
     }
   });
 
