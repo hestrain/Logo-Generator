@@ -32,14 +32,13 @@
 
 ## Description 
  
-  This application created a logo containing up to 3 chatacters with a shape, text color and shape color of your choide. this logo is saved as a SVG file
+  This application created a logo containing up to 3 characters with a shape, text color and shape color of your choice. this logo is saved as a SVG file
  
 
 ### Built With: 
 
   [![VS Code](https://img.shields.io/badge/IDE-VSCode-0000ff?style=plastic&logo=VisualStudioCode&logoWidth=10)](https://code.visualstudio.com/docs)
   [![Javascript](https://img.shields.io/badge/Language-JavaScript-ff0000?style=plastic&logo=JavaScript&logoWidth=10)](https://javascript.info/)
-  [![Node Current](https://img.shields.io/node/inquirer)](https://www.npmjs.com/package/inquirer)
 
 ## Installation 
  
@@ -92,13 +91,13 @@ Don't forget to give the project a star! Thanks again!
  
 **For Questions, please reach out to me on Github or by Email** 
 
-  - Github: 
-   [hestrain](https://github.com/hestrain)
+- Github: 
+[hestrain](https://github.com/hestrain)
 
-  - Email Address: 
-  [hestrain@gmail.com](mailto:hestrain@gmail.com)
+- Email Address: 
+[hestrain@gmail.com](mailto:hestrain@gmail.com)
 
-  ### Project Links: 
+### Project Links: 
 
  - [Github Repository](https://github.com/hestrain/Logo-Generator)
 
