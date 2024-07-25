@@ -32,7 +32,7 @@
 
 ## Description 
  
-  This application created a logo containing up to 3 characters with a shape, text color and shape color of your choice. this logo is saved as a SVG file
+  This application created a logo containing up to 3 characters with a shape, text color and shape color of your choice. this logo is saved as a SVG file.
  
 
 ### Built With: 
@@ -50,13 +50,21 @@
 1. Clone the repo from github (link in the contact section) 
 2. Run "node index.js" in the terminal
 
+   Below is a screenshot of the terminal after completing the Icon Generator questions. 
 
+   ![Terminal View](/assets/images/iconGen%20Terminal.png)
+   
+   Below is a video of the terminal usage. 
+
+  [![Video of terminal usage](/assets/images/iconthumbnail.png)](https://youtu.be/ti7fTNScWLY)
+ 
 **Additional Usage Info:** 
-   see above
+   There is a folder of .svg icon examples located [here](/examples/)
 
 ## Testing 
 
-  i dont know how to write this but yet: TO ADD LATER
+  There is a JEST test file to test text color input, shape color input, and text input. 
+  at time of posting all tests are passing.
 
 ## Contributions 
 
