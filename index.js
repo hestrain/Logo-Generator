@@ -40,7 +40,13 @@ function init() {
         type: "input",
         message: questions.text,
         name: "text",
-        // validate: ,
+        validate: (userInput) => {
+          if (userInput.length > 3) {
+            return ("Please only enter up to 3 characters.");
+          } else {
+            return true;
+          }
+        }
     },
       {
         type: "input",
