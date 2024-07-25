@@ -4,7 +4,6 @@ var colors = require("colors");
 const generate = require("./lib/shapes.js");
 const fs = require("fs");
 const { log } = require("console");
-let fileName = "logo.svg"
 
 // array of questions for user input
 const questions = {
@@ -14,16 +13,19 @@ const questions = {
   shapeColor: "Please enter a color name or a hexadecimal number for your shape",
 };
 
-//function to write README file
+//function to write svg file
 function createSVG(response) {
-
+//calls generate shape function
  let svg = generate.generateShape(response);
+ //log to check
  console.log(svg);
+ //create the svg file with the returned value from generateShape
  fs.writeFile("icon.svg", svg, (error) => {
     //or log an error if not
     if (error) {
       console.log(error);
     } else {
+    //success message
       console.log(colors.bgGreen("Generated logo.svg"));
     }
   });
@@ -37,11 +39,14 @@ function init() {
     .prompt([
       //all the questions are below
       {
+        //text input
         type: "input",
         message: questions.text,
         name: "text",
+        //validation to make sure text input is 3 or fewer characters
         validate: (userInput) => {
           if (userInput.length > 3) {
+            //will give you the ability to delete and rewrite answer
             return ("Please only enter up to 3 characters.");
           } else {
             return true;
@@ -49,11 +54,13 @@ function init() {
         }
     },
       {
+        //text color input
         type: "input",
         message: questions.textColor,
         name: "textColor",
       },
       {
+        //shape input
         type: "list",
         message: questions.shape,
         name: "shape",
@@ -64,18 +71,19 @@ function init() {
           ],
       },
       {
+        //shape color input
         type: "input",
         message: questions.shapeColor,
         name: "shapeColor",
       },
     ])
     .then((response) => {
-        if (response.text.length > 3) {
-           console.log(colors.red( "Please only enter 1-3 characters of text. Try again!"));
-        } else{
-            console.log(colors.bgWhite(`We will make you a ${response.shapeColor} ${response.shape} that says ${response.text} in ${response.textColor}`));
-            createSVG(response);
-        }
+
+      //logs the response input back to the user
+      console.log(colors.bgWhite(`We will make you a ${response.shapeColor} ${response.shape} that says ${response.text} in ${response.textColor}`));
+      //calls shape creation
+      createSVG(response);
+        
     })
     .catch((error) => {
       if (error.isTtyError) {
