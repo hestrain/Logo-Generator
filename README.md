@@ -32,23 +32,28 @@
 
 ## Description 
  
-  This application created a logo containing up to 3 characters with a shape, text color and shape color of your choice. this logo is saved as a SVG file.
+  This application creates a logo containing up to 3 characters with a shape, text color and shape color of your choice. 
+  User input i taken via terminal.
+  This logo is saved as a SVG file called icon.svg
  
 
 ### Built With: 
 
   [![VS Code](https://img.shields.io/badge/IDE-VSCode-0000ff?style=plastic&logo=VisualStudioCode&logoWidth=10)](https://code.visualstudio.com/docs)
   [![Javascript](https://img.shields.io/badge/Language-JavaScript-ff0000?style=plastic&logo=JavaScript&logoWidth=10)](https://javascript.info/)
+  [Node.js](https://nodejs.org/en/about)
+    - [colors](https://www.npmjs.com/package/colors)
+    - [inquirer@8.2.4](https://www.npmjs.com/package/inquirer/v/8.2.4)
+  [JEST](https://jestjs.io/docs/getting-started)
 
 ## Installation 
  
-   needs to be run in terminal 
+   Needs to be run in terminal.
 
 ## Usage 
 
-
-1. Clone the repo from github (link in the contact section) 
-2. Run "node index.js" in the terminal
+1. Clone the project from [Github Repository](https://github.com/hestrain/Logo-Generator)
+2. Run ```node index.js``` in the terminal
 
    Below is a screenshot of the terminal after completing the Icon Generator questions. 
 
@@ -109,4 +114,4 @@ Don't forget to give the project a star! Thanks again!
 
  - [Github Repository](https://github.com/hestrain/Logo-Generator)
 
- - [Deployed Site](add later)
+ - There is no deployed site for this, as there is no "front end"
